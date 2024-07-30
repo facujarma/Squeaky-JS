@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/layout.astro";
+---
+
+<Layout title="Squeaky JS | Crear Cuenta">
+  <main class="h-screen flex items-end">
+    <section class="w-[40vw] mx-auto bg-gray-400 px-12 py-6 pb-36">
+      <div class="flex gap-4 items-center h-fit">
+        <a href="/"> &gt </a>
+        <h1 class="font-bold text-3xl mb-8">Crear Cuenta</h1>
+      </div>
+      <form class="flex flex-col gap-8">
+        <input
+          type="email"
+          placeholder="Ingresa tu Email"
+          class="h-10 w-full px-4 bg-gray-200 rounded-lg"
+        />
+        <input
+          type="password"
+          placeholder="Establezca tu contraseña"
+          class="h-10 w-full px-4 bg-gray-200 rounded-lg"
+        />
+
+        <input type="date" class="h-10 w-full px-4 bg-gray-200 rounded-lg" />
+        <div class="w-full flex justify-end">
+          <button class="px-8 py-2 bg-green-600 rounded-lg text-white"
+            >Crear Cuenta</button
+          >
+        </div>
+      </form>
+    </section>
+  </main>
+</Layout>
